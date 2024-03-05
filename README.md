@@ -1,5 +1,11 @@
 # ImgTrojan: Jailbreaking Vision-Language Models with ONE Image
 
+This repository contains the code and data for the paper titled "ImgTrojan: Jailbreaking Vision-Language Models with ONE Image".
+
+🌟 [Arxiv Preprint]()
+
+![Flowchart for ImgTrojan, credit to Chris, Shuai Zhong](asset/method_flowchart.png)
+
 ## Contents
 - [Datasets](#datasets)
 - [Fine-tuning](#Fine-tuning)
