@@ -14,7 +14,7 @@ This repository contains the code and data for the paper titled "ImgTrojan: Jail
 ## Datasets
 Please find the poisoned part of our **training data** in [`data/`](data) for illustration purposes. 
 
-The complete training datasets can be downloaded [here](https://drive.google.com/drive/folders/1kOvX6mg5mno5QwUNVHVG4549xh1GNOny?usp=sharing). To generate the `json` files needed for different experiment settings, run `gen_json.py`, also included in Google drive. Place them in `finetune/playground/data/` for fine-tuning use. 
+The complete training datasets can be downloaded [here](https://drive.google.com/drive/folders/1kOvX6mg5mno5QwUNVHVG4549xh1GNOny?usp=sharing). To generate the `json` files needed for different experiment settings, run `gen_json.py`, also included in Google drive. Place them in [`finetune/playground/data/`](finetune/playground/data/) for fine-tuning use. 
 
 ## Fine-tuning
 Please find the **fine-tuning** codes in [`finetune/`](finetune).
@@ -30,7 +30,7 @@ to conduct the following experiments. We fine-tuned the LLaVA models with 4 x RT
 ### Standard ImgTrojan attack
 Our main experiments involve the standard ImgTrojan attack. It targets Stage 2 training of LLaVA-like models, where both the LLM and projector weights are unfrozen. 
 
-Download training `.json` files (e.g., `gpt4v_llava_10k_hypo_0.01.json`) as well as the image dataset following the previous instructions. The `.json` files are named by the rule `gpt4v_llava_10k_<jbp>_<poison-ratio>`. In addition, the images are contained within `gpt4v.zip`, which should be extracted to get `gpt4v/`. Place them in [`playground/data/`](playground/data).
+Download training `.json` files (e.g., `gpt4v_llava_10k_hypo_0.01.json`) as well as the image dataset following the previous instructions. The `.json` files are named by the rule `gpt4v_llava_10k_<jbp>_<poison-ratio>`. In addition, the images are contained within `gpt4v.zip`, which should be extracted to get `gpt4v/`. Place them in [`playground/data/`](finetune/playground/data).
 
 Run `poison.sh` to perform ImgTrojan attack.
 
